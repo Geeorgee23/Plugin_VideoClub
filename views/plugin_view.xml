@@ -1,0 +1,33 @@
+<odoo>
+  <data>
+    <record id="plugin_videoclub.plugin_model_form_inherit" model="ir.ui.view">
+      <field name="name"> Edad empleado</field>
+      <field name="model">videoclub_app.empleados_model</field>
+      <field name="inherit_id" ref="videoclub_app.empleados_form"/>
+
+      <field name="arch" type="xml">
+        <field name="apellidos" position="after">
+          <field name="edad"/>
+        </field>
+      </field>
+
+    </record>
+
+    <record id="plugin_videoclub.plugin_model_tree_inherit" model="ir.ui.view">
+      <field name="name"> Edad empleado</field>
+      <field name="model">videoclub_app.empleados_model</field>
+      <field name="inherit_id" ref="videoclub_app.empleados_tree"/>
+      <field name="arch" type="xml">
+     
+        <field name="apellidos" position="after">
+     
+          <field name="edad" />
+     
+        </field>
+     
+      </field>
+     
+    </record>
+
+  </data>
+</odoo>
